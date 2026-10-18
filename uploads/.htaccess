@@ -1,0 +1,14 @@
+# Defense in depth: never run scripts that end up inside the uploads folder.
+<FilesMatch "\.(php|php[0-9]|phtml|phar|pl|py|cgi|sh|exe)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>

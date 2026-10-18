@@ -1,0 +1,54 @@
+# ======================================================================
+# CareerCraft - files that must NEVER be published
+# ======================================================================
+
+# --- Secrets and local configuration -----------------------------------
+includes/config.php
+.env
+.env.*
+
+# --- Personal uploads (profile pictures, resumes) ----------------------
+# Everything inside uploads/ is ignored, except the placeholder files that keep the
+# folders (and their protection) in the repository.
+uploads/*
+!uploads/.htaccess
+!uploads/index.html
+!uploads/profiles/
+!uploads/resumes/
+uploads/profiles/*
+!uploads/profiles/index.html
+uploads/resumes/*
+!uploads/resumes/index.html
+
+# --- Database dumps / backups (they contain real user data) -------------
+# database/schema.sql is the only .sql file that belongs in the repository.
+*.sql
+!database/schema.sql
+*.sql.gz
+*.dump
+*.bak
+*.backup
+backup/
+backups/
+
+# --- Editor, system and temporary files --------------------------------
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+error_log
+php_errors.log
+*.tmp
+*.temp
+*.swp
+*~
+
+# --- Archives and dependencies ------------------------------------------
+*.zip
+*.rar
+*.7z
+node_modules/
+vendor/
