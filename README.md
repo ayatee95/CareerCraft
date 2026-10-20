@@ -179,22 +179,24 @@ can be opened by anyone who knows it. Portfolio ids are sequential, so every por
 - WOFF2 fonts and a full set of font weights
 - Portfolio themes, drag-and-drop ordering of skills and projects, multi-language support
 
-## Testing status
-Be honest about what has and has not been verified:
+## Testing Status
 
-- **Manual testing:** the author tested the main features locally on AppServ during development
-  (registration, login, profile, skills, projects, resume upload, public portfolio).
-- **No automated test suite** exists.
-- **Checks done on this GitHub-ready copy:** PHP structure checks (balanced syntax, defined functions, include paths),
-  every SQL statement checked against `database/schema.sql`, ownership rules checked on a throw-away in-memory database,
-  user-interface checks in a headless browser with sample data (layout at five screen widths, JavaScript behaviour,
-  bundled font loading, Content-Security-Policy), and a scan for credentials and personal files.
-  PHP itself and MySQL were **not** available for these checks.
-- **Still to do by the person who publishes:** run through the local checklist below with PHP and MySQL.
+The main application features have been manually tested locally using AppServ on Windows.
 
-Local checklist: register two accounts; add/edit/delete a skill and a project in each; try opening the other account's
-`skills.php?edit=ID` / `projects.php?edit=ID` (must say "not found"); upload a picture and a PDF (and try a fake `.pdf`);
-change the password; log out and try to open `dashboard.php`; open `portfolio.php?id=<id>` and an unknown id.
+Completed tests:
+
+- Registered two separate user accounts successfully.
+- Added, edited, and deleted skills and projects.
+- Verified that one user cannot edit another user's skills.
+- Uploaded a profile picture and confirmed that it appeared correctly.
+- Uploaded a valid PDF resume and tested rejection of an invalid PDF file.
+- Changed the account password and tested login with the new password.
+- Confirmed that the dashboard cannot be accessed after logout.
+- Tested the public portfolio using an existing user ID and an unknown user ID.
+
+All the tests listed above passed in the local environment. Automated tests have not yet been implemented.
+
+This project is intended for learning and portfolio demonstration. Further security review and testing are recommended before deploying it as a public production service.
 
 ## Publishing to GitHub with GitHub Desktop
 Before the first commit, make sure **none** of these are included: `includes/config.php`, anything inside `uploads/`
