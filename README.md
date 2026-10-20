@@ -11,17 +11,18 @@ Built with **PHP, MySQL, HTML, CSS and JavaScript** (no frameworks) as a learnin
 ## Table of contents
 1. [Overview and purpose](#overview-and-purpose)
 2. [Features](#features)
-3. [Technologies](#technologies)
-4. [Project structure](#project-structure)
-5. [Requirements](#requirements)
-6. [Installation on Windows with AppServ](#installation-on-windows-with-appserv)
-7. [Using the application](#using-the-application)
-8. [Uploads and file handling](#uploads-and-file-handling)
-9. [Security and privacy](#security-and-privacy)
-10. [Known limitations](#known-limitations)
-11. [Future improvements](#future-improvements)
-12. [Testing status](#testing-status)
-13. [Third-party assets and license](#third-party-assets-and-license)
+3. [screenshots](#screenshots)
+4. [Technologies](#technologies)
+5. [Project structure](#project-structure)
+6. [Requirements](#requirements)
+7. [Installation on Windows with AppServ](#installation-on-windows-with-appserv)
+8. [Using the application](#using-the-application)
+9. [Uploads and file handling](#uploads-and-file-handling)
+10. [Security and privacy](#security-and-privacy)
+11. [Known limitations](#known-limitations)
+12. [Future improvements](#future-improvements)
+13. [Testing status](#testing-status)
+14. [Third-party assets and license](#third-party-assets-and-license)
 
 ## Overview and purpose
 CareerCraft lets a person present their professional profile online in one place:
@@ -45,6 +46,29 @@ Everything listed here exists in the code of this repository.
   Missing information is hidden; an unknown id shows a "Portfolio not found" page (HTTP 404).
 - **Interface:** dark black-and-gold design, responsive layout with a slide-in menu on phones,
   keyboard-friendly focus styles, delete confirmation dialog.
+
+## Screenshots
+### Desktop Screenshots
+
+![CareerCraft Home Page](project-media/screenshots/desktop/1.png)
+
+![CareerCraft Public Portfolio](project-media/screenshots/desktop/13portfolio.png)
+
+![CareerCraft Portfolio - Skills and Projects](project-media/screenshots/desktop/14portfolio.png)
+
+![CareerCraft Skills Management](project-media/screenshots/desktop/9skills.png)
+
+![CareerCraft Projects Management](project-media/screenshots/desktop/10projects.png)
+
+### Mobile Screenshots
+
+![CareerCraft Mobile Screenshot 1](project-media/screenshots/mobile/1.jpg)
+
+![CareerCraft Mobile Screenshot 2](project-media/screenshots/mobile/2.jpg)
+
+![CareerCraft Mobile Screenshot 3](project-media/screenshots/mobile/3.jpg)
+
+![CareerCraft Mobile Screenshot 4](project-media/screenshots/mobile/4.jpg)
 
 ## Technologies
 - PHP (procedural, `mysqli` with prepared statements)
