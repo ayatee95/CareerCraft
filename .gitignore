@@ -52,3 +52,30 @@ php_errors.log
 *.7z
 node_modules/
 vendor/
+
+# Keep project media private by default
+project-media/*
+
+# Allow selected desktop screenshots
+!project-media/screenshots/
+project-media/screenshots/*
+!project-media/screenshots/desktop/
+!project-media/screenshots/mobile/
+
+# Allow selected desktop images only
+project-media/screenshots/desktop/*
+!project-media/screenshots/desktop/1.png
+!project-media/screenshots/desktop/13portfolio.png
+!project-media/screenshots/desktop/14portfolio.png
+!project-media/screenshots/desktop/9skills.png
+!project-media/screenshots/desktop/10projects.png
+
+# Allow selected mobile images only
+project-media/screenshots/mobile/*
+!project-media/screenshots/mobile/1.jpg
+!project-media/screenshots/mobile/2.jpg
+!project-media/screenshots/mobile/3.jpg
+!project-media/screenshots/mobile/4.jpg
+
+# Keep video local
+project-media/video/
