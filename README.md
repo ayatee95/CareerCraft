@@ -21,8 +21,7 @@ Built with **PHP, MySQL, HTML, CSS and JavaScript** (no frameworks) as a learnin
 10. [Known limitations](#known-limitations)
 11. [Future improvements](#future-improvements)
 12. [Testing status](#testing-status)
-13. [Publishing to GitHub with GitHub Desktop](#publishing-to-github-with-github-desktop)
-14. [Third-party assets and license](#third-party-assets-and-license)
+13. [Third-party assets and license](#third-party-assets-and-license)
 
 ## Overview and purpose
 CareerCraft lets a person present their professional profile online in one place:
@@ -197,20 +196,6 @@ Completed tests:
 All the tests listed above passed in the local environment. Automated tests have not yet been implemented.
 
 This project is intended for learning and portfolio demonstration. Further security review and testing are recommended before deploying it as a public production service.
-
-## Publishing to GitHub with GitHub Desktop
-Before the first commit, make sure **none** of these are included: `includes/config.php`, anything inside `uploads/`
-other than the three `index.html` files and `uploads/.htaccess`, `.sql` backups of your real database, `.zip` archives.
-
-1. Open **GitHub Desktop** -> **File -> Add local repository...** and choose the project folder.
-   If it says the folder is not a Git repository, click **create a repository**, keep the name, leave **Git ignore: None**
-   and **License: None** (the folder already has a `.gitignore`), then **Create repository**.
-2. In the **Changes** tab, read the list of files. You should see only source files, `assets/`, `database/schema.sql`,
-   `README.md`, `.gitignore`, and the placeholder files in `uploads/`.
-3. If you see `config.php`, a PDF, an image from `uploads/`, or a database backup: **stop**, do not commit, and fix the folder first.
-4. Write a summary such as *Initial commit* and click **Commit to main**.
-5. When you are ready, click **Publish repository**. Choose the name, decide private or public, and publish.
-6. After publishing, open the repository on github.com and check that `includes/config.php` is not there.
 
 ## Third-party assets and license
 - **Poppins** font, version 4.004, (c) 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins),
